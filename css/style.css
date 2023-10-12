@@ -3,7 +3,7 @@ body {
   background-color: #233000;
 }
 
-
+/*header start */
 .header-contact {
   padding: 20px;
   color: white;
@@ -20,6 +20,8 @@ body {
   font-size: 15px;
   margin-right: 10px;
 }
+/*header end */
+
 /* Navbar */
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
@@ -111,7 +113,6 @@ body {
 
 /* Menu Start */
 .menu {
-  text-align: center;
   padding: 100px 0;
   background-color: #ebf0e4;
 }
@@ -133,8 +134,8 @@ body {
   border: none;
 }
 .menu img {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 450px;
 }
 .delivery {
   margin-top: 100px;
@@ -152,6 +153,9 @@ body {
 .menu .btn-delivery:hover {
   color: #435907;
   background-color: white;
+}
+.menu .table tr{
+  justify-content: right;
 }
 
 
@@ -180,6 +184,7 @@ body {
   width: 100%;
   height: 350px;
 }
+
 .carousel-caption h5 {
   font-size: 45px;
   font-weight: bold;
