@@ -22,16 +22,16 @@ body {
 }
 /*header end */
 
-/* Navbar */
+/* Navbar start */
+.navbar .navbar-nav {
+  gap: 50px;
+}
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 0px 10px 0px;
-  margin: 0 0 0 50px;
 }
 .navbar {
-  justify-content: space-between;
   background-color: #233000dc;
   border-bottom: 1px solid #233000;
 }
@@ -53,21 +53,22 @@ body {
   color: white;
   font-size: 30px;
 }
-
 .navbar .navbar-brand span {
   font-size: 35px;
   font-weight: bold;
 }
+/* Navbar end */
 
 /* jumbotron start */
 .jumbotron {
   background-size: 100% 100%;
   background-image: url(/asset/img/bg-menu.png);
   background-repeat: no-repeat;
-  height: 550px;
+  height: 600px;
 }
 .jumbotron .title {
-  padding: 100px 650px 100px 100px;
+  padding-left: 100px;
+  padding-top: 100px;
 }
 .jumbotron h1 {
   margin-bottom: 40px;
@@ -83,6 +84,9 @@ body {
 /* jumbotron end */
 
 /* breadcrumb start */
+.breadcrumb {
+  padding-top: 30px;
+}
 .breadcrumb-item a:hover {
   color: #435907;
 }
@@ -95,12 +99,30 @@ body {
 
 /* manu start */
 .menu {
-  padding-top: 30px;
+  padding-bottom: 100px;
   background-color: white;
 }
-.menu h1,
-.menu p {
+.menu h1 {
   text-align: center;
+}
+.menu .row {
+  margin-top: 100px;
+}
+.menu .tittle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card {
+  border-radius: 20px;
+}
+.card img {
+  border-radius: 20px;
+  padding: 10px 10px 0 10px;
+}
+.menu .card h5,
+.menu .card p {
+  font-size: 20px;
+  font-weight: 700;
 }
 /* manu end */
 

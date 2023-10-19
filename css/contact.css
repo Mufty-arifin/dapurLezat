@@ -1,12 +1,21 @@
+/*
+ - Header
+ - Navbar
+ - Jumbotron
+ - Breadcrumb
+ - Reservation
+ - Footer
+*/
 body {
   font-family: "rufina";
   background-color: #233000;
 }
-/* Header*/
+
+/*header start */
 .header-contact {
-  background-color: #233000;
   padding: 20px;
   color: white;
+
   width: 100%;
   height: 30px;
 }
@@ -19,6 +28,8 @@ body {
   font-size: 15px;
   margin-right: 10px;
 }
+/*header end */
+
 /* Navbar start */
 .navbar .navbar-nav {
   gap: 50px;
@@ -56,27 +67,28 @@ body {
 }
 /* Navbar end */
 
-/* Jumbotron Start*/
+/* jumbotron start */
 .jumbotron {
   background-size: 100% 100%;
-  background-image: url(/asset/img/bg-jum.png);
+  background-image: url(/asset/img/bg-contact.png);
   background-repeat: no-repeat;
   height: 600px;
-  padding-top: 150px;
-  padding-right: 300px;
+  color: white;
+}
+.jumbotron hr {
+  border-bottom: 2px dotted white;
 }
 .jumbotron .title {
-  text-align: right;
+  padding-top: 100px;
 }
-.jumbotron h1 {
-  font-size: 60px;
-  font-style: normal;
-  line-height: 152px; /* 102.703% */
-  color: var(--FFFFFF, #fff);
+.jumbotron .title h1 {
+  font-size: 80px;
 }
-.jumbotron p {
-  margin-top: -20px;
-  color: white;
+.jumbotron .title p {
+  font-size: 20px;
+}
+.jumbotron .time {
+  padding-top: 300px;
 }
 /* Jumbotron End */
 
@@ -93,35 +105,69 @@ body {
   font-weight: 700;
 }
 /* Breadcrumb End */
-.about {
-  background-color: white;
+
+/* contact start */
+.contact {
   padding-bottom: 100px;
+  background-color: white;
 }
-.about h3 {
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120px; /* 111.111% */
+.contact img {
+  width: 100%;
+  max-height: 450px;
 }
-.card {
-  margin: 100px auto 0 auto;
-  margin-top: 100px;
- 
-  border: none;
-  gap: 5px;
-  width: 70%;
-}
-.card .card-title {
-  font-size: 25px;
-  font-style: normal;
+.contact .contacts {
+  padding: 200px 80px;
+  font-size: 15px;
   font-weight: 700;
 }
+.contact span {
+  color: #9caa00;
+  font-size: 15px;
+  font-weight: 700;
+}
+.contact .address {
+  padding: 170px 80px;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* contact end */
 
+/* Reservation Start*/
+.reservation {
+  padding: 100px 50px;
+  text-align: center;
+  background-color: #ebf0e4;
+}
+.reservation input,
+.reservation select {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+.reservation option {
+  background-color: white;
+  border: 1px solid red;
+}
+.reservation option:hover {
+  background-color: #9caa00;
+}
+.reservation button {
+  margin-top: 30px;
+  background-color: #5e6600;
+  padding: 10px 36px;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+.reservation button:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: #5e6600;
+}
+/* Reservation End*/
 
-/* footer start */
+/* Footer Start */
 .footer {
-  background-color: #233000;
-  padding-top: 100px;
+  margin-top: 100px;
   color: white;
 }
 .footer h2 {
@@ -165,7 +211,7 @@ body {
   background: var(--5E6600, #5e6600);
   color: white;
 }
-hr {
+.footer hr {
   margin-top: 50px;
   border-bottom: 2px dotted white;
 }
@@ -177,4 +223,22 @@ hr {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-/* footer end */
+/* Footer End */
+@media only screen and (max-width: 480px) {
+  .jumbotron .title h1 {
+    font-size: 50px;
+  }
+  .jumbotron .title p {
+    font-size: 10px;
+  }
+  .jumbotron .time {
+    padding-top: 100px;
+  }
+  .time p{
+    font-size: 10px;
+  }
+  .time{
+    display: flex;
+  }
+}
+

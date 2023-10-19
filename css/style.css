@@ -1,3 +1,12 @@
+/*
+ - Header
+ - Navbar
+ - Jumbotron
+ - About
+ - Menu
+ - Branch
+ - Footer
+*/
 body {
   font-family: "rufina";
   background-color: #233000;
@@ -7,7 +16,6 @@ body {
 .header-contact {
   padding: 20px;
   color: white;
-
   width: 100%;
   height: 30px;
 }
@@ -22,16 +30,16 @@ body {
 }
 /*header end */
 
-/* Navbar */
+/* Navbar start */
+.navbar .navbar-nav {
+  gap: 50px;
+}
 .navbar .navbar-nav .nav-item .nav-link {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  padding: 10px 0px 10px 0px;
-  margin: 0 0 0 50px;
 }
 .navbar {
-  justify-content: space-between;
   background-color: #233000dc;
   border-bottom: 1px solid #233000;
 }
@@ -53,13 +61,13 @@ body {
   color: white;
   font-size: 30px;
 }
-
 .navbar .navbar-brand span {
   font-size: 35px;
   font-weight: bold;
 }
+/* Navbar end */
 
-/* Jumbotron */
+/* Jumbotron start */
 .jumbotron {
   margin-top: 50px;
   color: white;
@@ -81,7 +89,9 @@ body {
 .jumbotron button:hover {
   background-color: #d0c8bd;
 }
+/* Jumbotron end */
 
+/* About start */
 .about {
   padding: 50px 0;
   background-color: white;
@@ -89,10 +99,9 @@ body {
 .about h1 {
   font-size: 45px;
   font-weight: 700;
-  line-height: 120px; /* 111.111% */
 }
 .about h3 {
-  font-size: 34px;
+  font-size: 35px;
   font-weight: bold;
 }
 .about p {
@@ -101,47 +110,50 @@ body {
 .card-row {
   margin-left: 10px;
 }
-
 .circle {
   padding: 25px 25px 25px 25px;
- margin-left: 125px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: #ebf0e4;
 }
+/* About end */
 
 /* Menu Start */
 .menu {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #ebf0e4;
+}
+.menu p {
+  font-size: 22px;
 }
 .menu h1 {
   font-size: 45px;
   font-weight: 700;
-  line-height: 120px; /* 111.111% */
 }
 .menu h2 {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
 }
-
 .menu tr td {
+  font-size: 25px;
   padding-bottom: 20px;
   border: none;
 }
 .menu img {
-  width: 400px;
-  height: 450px;
+  width: 100%;
+  max-height: 450px;
 }
 .delivery {
   margin-top: 100px;
   text-align: center;
 }
-.menu .btn-delivery {
+.btn-menu{
   border-radius: 2px;
   width: 150px;
   height: 50px;
@@ -150,18 +162,18 @@ body {
   background-color: #435907;
   text-align: center;
 }
-.menu .btn-delivery:hover {
+
+.btn-menu:hover {
   color: #435907;
   background-color: white;
 }
-.menu .table tr{
+.menu .table tr {
   justify-content: right;
 }
 
-
 /* Menu End */
 
-/* branch start */
+/* Branch start */
 .branch {
   background: url(/asset/img/bg-branch.jpg) no-repeat;
   background-size: 100% 100%;
@@ -173,7 +185,7 @@ body {
 .branch h1 {
   font-size: 45px;
   font-weight: 700;
-  line-height: 120px; /* 111.111% */
+  line-height: 120px;
   margin-bottom: 100px;
 }
 .carousel-inner .carousel-item img {
@@ -184,7 +196,6 @@ body {
   width: 100%;
   height: 350px;
 }
-
 .carousel-caption h5 {
   font-size: 45px;
   font-weight: bold;
@@ -194,9 +205,11 @@ body {
   font-weight: bold;
   text-shadow: 1px 2px 1px black;
 }
+/* Branch end */
+
 /* footer start */
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   color: white;
 }
 .footer h2 {
@@ -254,8 +267,135 @@ hr {
 }
 /* footer end */
 
+.card-reservation {
+  background-color: #ebf0e4;
+  border-radius: 8px;
+  padding: 48px 24px 48px 24px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  text-align: center;
+}
+.card-reservation-input {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  border: 1.5px solid #000032;
+
+  margin-bottom: 24px;
+}
+.card-reservation-tittle {
+  font-size: 30px;
+  font-weight: 500;
+}
+.card img {
+  border-radius: 8px;
+}
+.card-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 18px;
+}
+.card-body {
+  padding: 0px;
+  padding-top: 18px;
+}
+.btn-reservation {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 20px;
+  color: white;
+  background-color: #5e6600;
+}
+.btn-reservation:hover {
+  border: 1px solid black;
+  color: #5e6600;
+  background-color: white;
+}
 
 /* Page About*/
-.about-jumbotron{
+.about-jumbotron {
   background-image: url(/asset/img/bg-about.jpg) no-repeat;
+}
+
+/* Horizontal pads and laptops */
+@media only screen and (max-width: 1381px) {
+}
+
+/* Larger pads */
+@media only screen and (max-width: 991px) {
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+}
+
+/* Pads and larger phones */
+@media only screen and (max-width: 768px) {
+}
+
+/* Little larger screen */
+@media only screen and (max-width: 600px) {
+}
+
+/* Little  screen */
+@media only screen and (max-width: 480px) {
+  .navbar .navbar-nav .nav-item .nav-link::after {
+    text-align: left;
+    content: "";
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #d0c8bd;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover::after {
+    justify-content: end;
+    transform: scaleX(0.15);
+  }
+  .navbar .navbar-nav .nav-item {
+    text-align: center;
+  }
+  .navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .navbar .navbar-brand {
+    font-size: 25px;
+  }
+  .navbar .navbar-brand span {
+    font-size: 30px;
+  }
+  .navbar .navbar-nav {
+    gap: 10px;
+  }
+  .jumbotron {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .jumbotron img {
+    height: 350px;
+  }
+  .jumbotron h1 {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .about {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .about p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .about h3 {
+    margin-top: 30px;
+    font-size: 25px;
+  }
 }
