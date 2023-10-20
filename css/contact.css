@@ -1,21 +1,13 @@
-/*
- - Header
- - Navbar
- - Jumbotron
- - Breadcrumb
- - Reservation
- - Footer
-*/
+
 body {
   font-family: "rufina";
   background-color: #233000;
 }
 
-/*header start */
+/* Header Start */
 .header-contact {
   padding: 20px;
   color: white;
-
   width: 100%;
   height: 30px;
 }
@@ -28,9 +20,9 @@ body {
   font-size: 15px;
   margin-right: 10px;
 }
-/*header end */
+/* Header End */
 
-/* Navbar start */
+/* Navbar Start */
 .navbar .navbar-nav {
   gap: 50px;
 }
@@ -65,9 +57,9 @@ body {
   font-size: 35px;
   font-weight: bold;
 }
-/* Navbar end */
+/* Navbar End */
 
-/* jumbotron start */
+/* Jumbotron Start */
 .jumbotron {
   background-size: 100% 100%;
   background-image: url(/asset/img/bg-contact.png);
@@ -106,7 +98,7 @@ body {
 }
 /* Breadcrumb End */
 
-/* contact start */
+/* Contact Start */
 .contact {
   padding-bottom: 100px;
   background-color: white;
@@ -130,7 +122,7 @@ body {
   font-size: 15px;
   font-weight: 700;
 }
-/* contact end */
+/* Contact End */
 
 /* Reservation Start*/
 .reservation {
@@ -165,9 +157,9 @@ body {
 }
 /* Reservation End*/
 
-/* Footer Start */
+/* footer start */
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   color: white;
 }
 .footer h2 {
@@ -211,7 +203,7 @@ body {
   background: var(--5E6600, #5e6600);
   color: white;
 }
-.footer hr {
+hr {
   margin-top: 50px;
   border-bottom: 2px dotted white;
 }
@@ -223,7 +215,7 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-/* Footer End */
+/* footer end */
 @media only screen and (max-width: 480px) {
   .jumbotron .title h1 {
     font-size: 50px;

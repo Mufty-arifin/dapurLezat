@@ -1,12 +1,3 @@
-/*
- - Header
- - Navbar
- - Jumbotron
- - About
- - Menu
- - Branch
- - Footer
-*/
 body {
   font-family: "rufina";
   background-color: #233000;
@@ -153,7 +144,7 @@ body {
   margin-top: 100px;
   text-align: center;
 }
-.btn-menu{
+.btn-menu {
   border-radius: 2px;
   width: 150px;
   height: 50px;

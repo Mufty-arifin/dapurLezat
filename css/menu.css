@@ -1,13 +1,13 @@
+
 body {
   font-family: "rufina";
   background-color: #233000;
 }
 
-/*header start */
+/* Header Start */
 .header-contact {
   padding: 20px;
   color: white;
-
   width: 100%;
   height: 30px;
 }
@@ -20,7 +20,7 @@ body {
   font-size: 15px;
   margin-right: 10px;
 }
-/*header end */
+/* Header End */
 
 /* Navbar start */
 .navbar .navbar-nav {
@@ -59,7 +59,7 @@ body {
 }
 /* Navbar end */
 
-/* jumbotron start */
+/* Jumbotron Start */
 .jumbotron {
   background-size: 100% 100%;
   background-image: url(/asset/img/bg-menu.png);
@@ -81,9 +81,9 @@ body {
   margin-top: -20px;
   color: white;
 }
-/* jumbotron end */
+/* Jumbotron End */
 
-/* breadcrumb start */
+/* Breadcrumb Start */
 .breadcrumb {
   padding-top: 30px;
 }
@@ -95,9 +95,9 @@ body {
   text-decoration: none;
   font-weight: 700;
 }
-/* breadcrumb end */
+/* Breadcrumb End */
 
-/* manu start */
+/* Menu Start */
 .menu {
   padding-bottom: 100px;
   background-color: white;
@@ -114,6 +114,7 @@ body {
 }
 .card {
   border-radius: 20px;
+  margin-bottom: 30px;
 }
 .card img {
   border-radius: 20px;
@@ -124,11 +125,29 @@ body {
   font-size: 20px;
   font-weight: 700;
 }
-/* manu end */
+.menu-btn {
+  text-align: center;
+}
+.btn-menu {
+  padding: 15px 15px 15px 15px;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  background-color: #435907;
+  text-align: center;
+}
+
+.btn-menu:hover {
+  border: 1px solid black;
+  padding: 15px 15px 15px 15px;
+  color: #435907;
+  background-color: #ebf0e4;
+}
+/* Menu End */
 
 /* footer start */
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   color: white;
 }
 .footer h2 {
